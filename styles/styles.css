@@ -1,0 +1,133 @@
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+:root {
+    --titles: #A51C1E;
+    --lightBackground: #FEFAE0;
+    --overBackground: #FAEDCD;
+}
+
+body {
+    background-color: var(--lightBackground);
+}
+
+#mainTitle {
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+    color: var(--titles);
+    font-size: 2rem;
+}
+
+#bookSection {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.bookArticle {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 20px 0px;
+    border: 2px solid var(--titles);
+    background-color: var(--overBackground);
+    border-radius: 20px;
+    font-size: 1.4rem;
+    width: 500px;
+    align-items: center;
+
+}
+
+.bookTitle {
+    color: var(--overBackground);
+    font-size: 1.3em;
+    background-color: var(--titles);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.author,
+.country {
+    text-align: center;
+    margin: 5px;
+    font-style: oblique;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+
+.bookImage {
+    margin: 30px 0px;
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+
+}
+
+.language,
+.year,
+.pages,
+.bookLink {
+    margin: 5px;
+    font-size: 1.1em;
+}
+
+.bookLink {
+    margin: 30px;
+    background-color: var(--overBackground);
+    color: var(--titles);
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid var(--titles);
+    text-decoration: none;
+    display: inline-block;
+}
+
+.bookLink:hover {
+    background-color: var(--titles);
+    color: var(--overBackground);
+}
+
+
+@media screen and (min-width:768px) {
+
+    #mainTitle {
+        margin: 20px;
+        padding: 50px;
+        font-size: 3.4rem;
+    }
+
+    .bookArticle{
+        width: 450px;
+        margin: 20px;
+    }
+    .author,
+    .country {
+        
+        font-size: 1em;
+    }
+
+    .bookImage {
+        width: 200px;
+        height: 300px;
+    }
+
+    .language,
+    .year,
+    .pages {
+        margin: 5px;
+        font-size: 1em;
+    }
+    
+    .bookLink {
+        font-size: 1.3em;
+    }
+}
